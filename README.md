@@ -1,5 +1,5 @@
 # Contract
-General-purpose programming language.
+General-purpose programming language. Inspired by clean code practices and functional programming concepts.
 
 - Protocol oriented
 - No OOP
