@@ -11,7 +11,7 @@ General-purpose programming language. Inspired by clean code practices and funct
 ## Current stage
 Developing Contract <-> Dart translator [here](https://github.com/ordohydra/contract)
 
-## Example
+## Syntax Example
 ```
 contract Color:
 	func hexCode() -> Int
@@ -35,3 +35,10 @@ implementation Mercedes of Car:
 	func color() -> Color:
 		return Color.Red
 ```
+## Feedback
+
+Feedback and constructive critics are welcome
+You can contact me via:
+
+- [LinkedIn](https://www.linkedin.com/in/victor-sukochev/)
+- Issues 
