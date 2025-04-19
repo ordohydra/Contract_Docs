@@ -4,9 +4,12 @@ General-purpose programming language. Inspired by clean code practices and funct
 - Protocol oriented
 - No OOP
 - Strict typing
+- No constant variables (immutability provided via contracts itself)
+- No optional values (do not have strong opinion here, still experimenting)
+- Errors via exceptions
 
 ## Current stage
-Developing Contract <-> Dart compiler
+Developing Contract <-> Dart translator [here](https://github.com/ordohydra/contract)
 
 ## Example
 ```
@@ -19,15 +22,15 @@ contract Car:
 
 namespace Color:
 	
-	impl Red implements Color:
+	implementation Red of Color:
 		func hexCode() -> Int: // Implemetation can use function or variable with same name to satisfy contract
 			return 0xFF0000
 
-	impl Green implements Color:
-		const hexCode: Int = 0x00FF00 // Both const and mutable variable satisfies contract
+	implementation Green of Color:
+		Int hexCode = 0x00FF00
 
-impl Mercedes implements Car:
-	mut numberOfWheels: Int = 4 // Mutable variable
+implementation Mercedes of Car:
+	numberOfWheels: Int = 4
 
 	func color() -> Color:
 		return Color.Red
