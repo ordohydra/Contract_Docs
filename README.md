@@ -8,6 +8,9 @@ General-purpose programming language. Inspired by clean code practices and funct
 - No optional values (do not have strong opinion here, still experimenting)
 - Errors via exceptions
 
+## Motivation
+You can read it [here](https://github.com/ordohydra/Contract_Docs/blob/main/Motivation/motivation.md)
+
 ## Current stage
 Developing Contract <-> Dart translator [here](https://github.com/ordohydra/contract)
 
