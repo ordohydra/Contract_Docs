@@ -30,10 +30,10 @@ namespace Color:
 			return 0xFF0000
 
 	implementation Green of Color:
-		Int hexCode = 0x00FF00
+		var hexCode: Int = 0x00FF00
 
 implementation Mercedes of Car:
-	numberOfWheels: Int = 4
+	var numberOfWheels: Int = 4
 
 	func color() -> Color:
 		return Color.Red
