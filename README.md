@@ -16,6 +16,8 @@ Developing Contract <-> Dart translator [here](https://github.com/ordohydra/cont
 
 ## Syntax Example
 ```
+# Colors
+
 contract Color:
 	func hexCode() -> Int
 
@@ -26,7 +28,7 @@ contract Car:
 namespace Color:
 	
 	implementation Red of Color:
-		func hexCode() -> Int: // Implemetation can use function or variable with same name to satisfy contract
+		func hexCode() -> Int: # Implemetation can use function or variable with same name to satisfy contract
 			return 0xFF0000
 
 	implementation Green of Color:
@@ -37,6 +39,18 @@ implementation Mercedes of Car:
 
 	func color() -> Color:
 		return Color.Red
+
+# Figures
+
+contract Figure:
+	func area() -> Double
+
+implementation Rect of Figure:
+	init(&width Double, &height Double): # `&` symbol is used to automatically "catch" reference for variable, not to make own copies of them manually
+
+	func area() -> Double:
+		return width * height
+
 ```
 ## Feedback
 
