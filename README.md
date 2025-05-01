@@ -27,14 +27,14 @@ contract Car:
 
 namespace Color:
 	
-	implementation Red of Color:
+	impl Red of Color:
 		func hexCode() -> Int: # Implemetation can use function or variable with same name to satisfy contract
 			return 0xFF0000
 
-	implementation Green of Color:
+	impl Green of Color:
 		var hexCode: Int = 0x00FF00
 
-implementation Mercedes of Car:
+impl Mercedes of Car:
 	var numberOfWheels: Int = 4
 
 	func color() -> Color:
@@ -45,8 +45,8 @@ implementation Mercedes of Car:
 contract Figure:
 	func area() -> Double
 
-implementation Rect of Figure:
-	init(&width Double, &height Double): # `&` symbol is used to automatically "catch" reference for variable, not to make own copies of them manually
+impl Rect of Figure:
+	init(&width Double, &height Double): # `&` symbol is used to automatically "catch" reference for variable in constructor, not to make own copies of them manually
 
 	func area() -> Double:
 		return width * height
